@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- search -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout1home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/top_add_notebook" />
+        </RelativeLayout>
+
+
+        <!-- body -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2home"
+            android:layout_width="match_parent"
+            android:layout_height="608dp"
+            android:layout_below="@id/relativeLayout1home">
+
+            <include layout="@layout/center_add_notebook" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

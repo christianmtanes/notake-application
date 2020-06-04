@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1067105864511",
+    "firebase_url": "https://notake-2c627.firebaseio.com",
+    "project_id": "notake-2c627",
+    "storage_bucket": "notake-2c627.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067105864511:android:e86af1a09d428801f2618a",
+        "android_client_info": {
+          "package_name": "com.tanxe.buggoff.notake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067105864511-7ojqivis5j352fdfa2d68c64mouibp6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3kXacikIfMNR8UML1JyBQhDlTJly-MzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067105864511-7ojqivis5j352fdfa2d68c64mouibp6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

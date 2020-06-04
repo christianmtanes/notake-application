@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- top -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout1NBSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/snippet_searchbar_captures" />
+        </RelativeLayout>
+
+
+        <!-- body -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout2Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativeLayout1NBSearch"
+            android:layout_marginTop="20dp">
+
+            <include layout="@layout/center_search_activity" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

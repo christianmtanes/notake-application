@@ -1,0 +1,185 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <!-- notebook name section -->
+            <RelativeLayout
+                android:id="@+id/relLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/grey_border_bottom">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_notebook" />
+
+                <EditText
+                    android:id="@+id/notebook_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:hint="@string/notebook_name"
+                    android:inputType="textNoSuggestions" />
+
+            </RelativeLayout>
+
+
+            <!-- notebook cover section -->
+            <RelativeLayout
+                android:id="@+id/relLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image_options"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_border_bottom"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_insert_link" />
+
+                <EditText
+                    android:id="@+id/notebook_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:hint="@string/insert_link"
+                    android:inputType="textNoSuggestions" />
+
+
+            </RelativeLayout>
+
+            <!-- notebook cover -->
+            <RelativeLayout
+                android:id="@+id/image_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relLayout1">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/image"
+                    android:text="@string/choose_cover"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/chooseCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:layout_marginTop="10dp"
+                    app:menu="@menu/checkable_cover_image_menu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/image_options"
+                android:clickable="true"
+                android:focusable="true">
+
+
+                <ImageView
+                    android:id="@+id/nb2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook3" />
+
+                <ImageView
+                    android:id="@+id/nb3"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/nb2"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook2" />
+
+                <ImageView
+                    android:id="@+id/nb4"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/nb3"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook4" />
+
+                <ImageView
+                    android:id="@+id/nb5"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/nb4"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook5" />
+
+                <ImageView
+                    android:id="@+id/nb6"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/nb5"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook6" />
+
+                <ImageView
+                    android:id="@+id/nb7"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/nb6"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook7" />
+
+                <ImageView
+                    android:id="@+id/nb8"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/nb7"
+                    android:onClick="onImageclick"
+                    android:src="@drawable/notebook8"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_options"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/white_rounded_button"
+                android:onClick="onAddClick"
+                android:text="@string/add" />
+
+        </RelativeLayout>
+    </ScrollView>
+</merge>

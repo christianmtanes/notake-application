@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp">
+
+
+    <ImageView
+        android:id="@+id/gridCaptureView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridCaptureView"
+        android:id="@+id/date"/>
+
+    <ProgressBar
+        android:id="@+id/gridCaptureProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:autoLink="web"
+        android:background="@null"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:hint="@string/notes"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
